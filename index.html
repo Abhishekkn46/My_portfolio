@@ -1,73 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Abhishek K N</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abhishek K N — Associate Software Development Engineer, .NET Developer and Full Stack Developer.">
+<title>Abhishek K N | Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">Abhishek K N</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
+<header class="nav">
+  <a class="brand" href="#home">AKN<span>.</span></a>
+  <button class="menu" aria-label="Toggle menu">☰</button>
+  <nav>
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">☀</button>
+  </nav>
+</header>
 
-    <main>
-        <!-- Home Section -->
-        <section class="section">
-            <div class="home-content">
-                <div class="home-text fade-in">
-                    <p class="intro-text">Hello, It's me</p>
-                    <h1 class="type-effect">Abhishek K N</h1>
-                    <p class="tagline">A quick learner and passionate developer eager to apply my skills to solve real-world problems and build innovative solutions.</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/abhishek_shetty_04/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/+916364530700" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://github.com/Abhishekkn46" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="http://www.linkedin.com/in/abhishek-k-n-193123291" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <a href="about.html" class="btn primary-btn">More About Me</a>
-                </div>
-                <div class="home-image fade-in">
-                    <img src="assets/images/profile.jpg" alt="Abhishek K N">
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <div class="dark-mode-container">
-        <span class="mode-icon">☀️</span>
-        <label class="dark-mode-toggle">
-            <input type="checkbox" id="dark-mode-toggle">
-            <span class="slider"></span>
-        </label>
-        <span class="mode-icon">🌙</span>
+<main>
+<section id="home" class="hero section">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">ASSOCIATE SOFTWARE DEVELOPMENT ENGINEER</p>
+    <h1>Building reliable<br><span>software for real-world systems.</span></h1>
+    <p class="lead">I'm Abhishek K N — a .NET-focused software engineer working on enterprise banking applications, REST APIs, web development, and database-driven solutions.</p>
+    <div class="actions">
+      <a class="btn primary" href="#experience">Explore my work</a>
+      <a class="btn ghost" href="Abhishek_KN_Resume.pdf" download>↓ Download Resume</a>
     </div>
+    <div class="quick-stats">
+      <div><strong>.NET</strong><span>Primary development<br>stack</span></div>
+      <div><strong>LOS + LMS</strong><span>Banking domain<br>exposure</span></div>
+      <div><strong>AI/DS</strong><span>Academic<br>foundation</span></div>
+    </div>
+  </div>
+  <div class="hero-visual reveal">
+    <div class="photo-frame">
+      <div class="photo-glow"></div>
+      <img src="profile.jpg" alt="Abhishek K N">
+      <div class="photo-caption"><span>ABHISHEK K N</span><small>Software Engineer · Bangalore</small></div>
+    </div>
+    <div class="floating-code"><span>C#</span><span>.NET</span><span>API</span><span>SQL</span></div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Abhishek K N. All Rights Reserved.</p>
-    </footer>
+<section id="about" class="section">
+  <div class="section-head reveal"><p class="eyebrow">01 / ABOUT</p><h2>Engineering with a practical mindset.</h2></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm an Associate Software Development Engineer at <strong>Craftsilicon Asia Pvt. Ltd.</strong>, working on enterprise banking software.</p>
+      <p>My current work spans C#, .NET, ASP.NET Web Forms, ADO.NET, SQL Server and REST API development. I work on feature development, change requests, new screens, business logic, debugging, database changes, UAT, releases and production activities.</p>
+      <p>My engineering foundation comes from a Bachelor's degree in Artificial Intelligence and Data Science, giving me a broader perspective across software development, data and technology.</p>
+    </div>
+    <div class="about-panel reveal"><span>CURRENT FOCUS</span><h3>Enterprise .NET<br>Development</h3><div class="line"></div><p>Web applications · REST APIs · SQL Server · Banking workflows · Production support</p></div>
+  </div>
+</section>
 
-    <script src="scripts/script.js"></script>
-</body>
-</html> 
+<section id="experience" class="section tinted">
+  <div class="section-head reveal"><p class="eyebrow">02 / EXPERIENCE</p><h2>Professional journey.</h2></div>
+  <div class="timeline">
+    <article class="timeline-item reveal"><div class="date">AUG 2025 — PRESENT</div><div class="timeline-content">
+      <h3>Associate Software Development Engineer</h3><p class="company">Craftsilicon Asia Pvt. Ltd. · Bangalore</p>
+      <ul><li>Develop and maintain BR.NET, a web-based banking application supporting Loan Origination System (LOS) and Loan Management System (LMS) workflows.</li>
+      <li>Develop BRCONNECT REST APIs for integration with BR.NET and mobile applications using JSON request/response models.</li>
+      <li>Implement change requests, new screens, business logic, database changes and application enhancements.</li>
+      <li>Debug and resolve application issues through code-level analysis, SQL analysis and Visual Studio debugging.</li>
+      <li>Support UAT, build, release and production deployment activities using Git/TFS workflows.</li></ul>
+    </div></article>
+    <article class="timeline-item reveal"><div class="date">SEP 2024 — FEB 2025</div><div class="timeline-content">
+      <h3>DevOps Engineer Intern</h3><p class="company">Rooman Technologies · Remote</p>
+      <ul><li>Collaborated on cloud-native application deployment and DevOps workflows.</li><li>Worked with Git/GitHub, Jenkins, Docker and Kubernetes.</li></ul>
+    </div></article>
+    <article class="timeline-item reveal"><div class="date">NOV 2023 — DEC 2023</div><div class="timeline-content">
+      <h3>AI/ML Intern</h3><p class="company">Quantum Learners · Remote</p>
+      <ul><li>Worked on machine learning models, data preprocessing and analysis using Python.</li><li>Gained practical experience in model development and machine learning workflows.</li></ul>
+    </div></article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-head reveal"><p class="eyebrow">03 / FEATURED PROJECTS</p><h2>Where I explored beyond the classroom.</h2></div>
+  <div class="project-grid">
+    <article class="project-card reveal"><div class="project-number">01</div><h3>Pediatric Glaucoma Detection System</h3><p>Deep learning system using CNN for pediatric glaucoma detection from fundus images, with a Gradio interface for model interaction.</p><div class="tags"><span>Python</span><span>TensorFlow</span><span>CNN</span><span>Gradio</span></div></article>
+    <article class="project-card reveal"><div class="project-number">02</div><h3>Heart Disease Prediction App</h3><p>Machine learning application for heart disease prediction using data preprocessing, model training and predictive analysis.</p><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML</span></div></article>
+    <article class="project-card reveal"><div class="project-number">03</div><h3>AbhiFlex Gym Management System</h3><p>Web-based gym management application for membership, workout and operational tracking using a database-backed web stack.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span></div></article>
+  </div>
+</section>
+
+<section id="skills" class="section tinted">
+  <div class="section-head reveal"><p class="eyebrow">04 / SKILLS</p><h2>Tools I work with.</h2></div>
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>&lt;/&gt;</span></div>
+      <h3>Backend</h3>
+      <div class="skill-list"><span>C#</span><span>.NET</span><span>.NET Core</span><span>ASP.NET</span><span>Web Forms</span><span>ADO.NET</span></div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>UI</span></div>
+      <h3>Frontend</h3>
+      <div class="skill-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>jQuery</span><span>React.js</span></div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>DB</span></div>
+      <h3>Database</h3>
+      <div class="skill-list"><span>SQL Server</span><span>SQL</span><span>Stored Procedures</span></div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>⚙</span></div>
+      <h3>Tools</h3>
+      <div class="skill-list"><span>Visual Studio</span><span>Git</span><span>TFS</span></div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>API</span></div>
+      <h3>API & Integration</h3>
+      <div class="skill-list"><span>REST APIs</span><span>JSON</span><span>Request / Response</span></div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-icon"><span>BK</span></div>
+      <h3>Domain</h3>
+      <div class="skill-list"><span>Banking</span><span>LOS</span><span>LMS</span><span>Authentication</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="section-head reveal"><p class="eyebrow">05 / EDUCATION</p><h2>Academic foundation.</h2></div>
+  <div class="education-card reveal"><div class="edu-year">2021 — 2025</div><div><h3>Bachelor of Engineering</h3><p class="degree">Artificial Intelligence and Data Science</p><p>Maharaja Institute of Technology Thandavapura, Mysore, Karnataka</p></div><div class="cgpa"><span>CGPA</span><strong>9.0</strong></div></div>
+  <div class="certifications reveal"><h3>Certifications</h3><div class="cert-grid"><span>Software Engineer Role Certification — HackerRank</span><span>SQL (Intermediate) — HackerRank</span><span>Master Course in Full Stack Development — Great Learning</span><span>SQL for Data Science — Great Learning</span></div></div>
+</section>
+
+<section id="contact" class="section contact"><div class="contact-wrap reveal">
+  <p class="eyebrow">06 / CONTACT</p><h2>Let's build something useful.</h2><p>Interested in .NET development, full-stack engineering or enterprise software? Get in touch.</p>
+  <a class="email" href="mailto:abhishekkn46@gmail.com">abhishekkn46@gmail.com</a>
+  <div class="contact-links"><a href="tel:+916364530700">+91 6364530700</a><a href="https://www.linkedin.com/in/abhishek-k-n-193123291" target="_blank">LinkedIn ↗</a></div>
+</div></section>
+</main>
+<footer><span>© 2026 Abhishek K N</span><span>Software Engineer · Bangalore</span></footer>
+<script src="script.js"></script>
+</body></html>
